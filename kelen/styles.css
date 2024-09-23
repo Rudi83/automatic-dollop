@@ -1,0 +1,130 @@
+/* Reset default margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mengatur gaya body */
+body {
+    font-family: Arial, sans-serif;
+    background: url('background-image.jpg') no-repeat center center fixed;
+    background-size: cover, contain; /* Menyesuaikan ukuran gambar dengan nilai berbeda */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Mengatur gaya kontainer utama */
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* Menambahkan sedikit transparansi */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Gaya untuk heading */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Gaya untuk paragraf */
+p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Gaya untuk tombol */
+.cta-button {
+    background-color: #ff1500;
+    border: none;
+    color: rgb(65, 65, 65);
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff3b30;
+}
+
+/* Styling untuk gambar dalam kontainer */
+.container-image {
+    width: 8%; /* Atur lebar gambar agar sesuai dengan lebar kontainer */
+    height: 50%; /* Menjaga rasio aspek gambar */
+    border-radius: 10px; /* Sudut membulat seperti kontainer */
+    margin-bottom: 1.5rem; /* Memberikan jarak di bawah gambar */
+    display: block; /* Pastikan gambar ditampilkan sebagai elemen block */
+}
+/* Styling untuk pesan di dalam kontainer */
+#message {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 1rem;
+    
+}
+/* Gaya untuk pesan tersembunyi */
+.hidden {
+    display: none;
+}
+
+/* Gaya untuk pesan yang ditampilkan */
+.visible {
+    display: block;
+    font-family: 1.2rem;
+    color: #555;
+    margin-top: 1rem;
+}
+
+/* Menengahkan teks di dalam elemen */
+.center-text {
+    text-align: center;
+}
+
+/* Modal (Popup) */
+.modal {
+    display: none; /* Tidak tampilkan modal secara default */
+    position: fixed; /* Tetap berada di posisi tetap di layar */
+    z-index: 1; /* Di atas elemen lainnya */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Jika diperlukan, scroll modal */
+    background-color: rgb(0,0,0); /* Warna latar belakang modal */
+    background-color: rgba(0,0,0,0); /* Transparansi */
+}
+
+/* Konten Modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Atur jarak dari atas dan pusatkan modal secara horizontal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Atur lebar modal */
+    border-radius: 10px;
+    background: rgb(255, 255, 255); /* Menambahkan sedikit transparansi */
+}
+
+/* Tombol Tutup */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
